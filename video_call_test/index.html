@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/peerjs@0.3.20/dist/peer.min.js"></script>
+    <script src="./index.js" ></script>
+    <title>P2P Video Chat</title>
+    <style>
+        #yourVid{
+            display: none;
+        }
+        #otherVid{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <span id="yourIdCont"> 
+        <label>Your ID:</label><br/>
+        <textarea id="yourId"></textarea><br/>
+    </span>
+
+    <span id="otherIdCont">
+        <label>Other ID:</label><br/>
+        <textarea id="otherId"></textarea>
+    </span>
+
+    <video width="320" height="240" id="yourVid" controls></video>
+
+    <video width="320" height="240" id="otherVid" controls></video>
+
+    <button onclick="submit()" id="send">submit</button>
+
+
+</body>
+</html>
